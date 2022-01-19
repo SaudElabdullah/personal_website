@@ -1,8 +1,9 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:personal_website/utils/size_config.dart';
+import 'package:link/link.dart';
+
 
 class Website extends StatefulWidget {
   const Website({Key? key}) : super(key: key);
@@ -122,10 +123,10 @@ class _WebsiteState extends State<Website> {
                   15,
                 ),
               ),
-              child: Row(
+              child: Column(
                 children: [
                   Text(
-                    'vch',
+                    'Socials:',
                     textAlign: TextAlign.left,
                     style: GoogleFonts.playfairDisplay(
                       textStyle: TextStyle(
@@ -135,26 +136,33 @@ class _WebsiteState extends State<Website> {
                       ),
                     ),
                   ),
-                  Transform.rotate(
-                    angle: -math.pi / 4,
-                    child: Divider(
-                      height: SizeConfig.heightMultiplier! * 10,
-                      // indent: SizeConfig.heightMultiplier! * 1,
-                      // endIndent: SizeConfig.heightMultiplier! * 1,
-                      thickness: SizeConfig.heightMultiplier! * 10,
-                      color: Colors.black,
-                    ),
-                  ),
-                  Text(
-                    'fhg',
-                    textAlign: TextAlign.left,
-                    style: GoogleFonts.playfairDisplay(
-                      textStyle: TextStyle(
-                        fontSize: SizeConfig.textMultiplier! * 1.3,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.black,
+                  Link(
+                    child: Text(
+                      'Github 👾',
+                      textAlign: TextAlign.left,
+                      style: GoogleFonts.playfairDisplay(
+                        textStyle: TextStyle(
+                          fontSize: SizeConfig.textMultiplier! * 1.3,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black,
+                        ),
                       ),
                     ),
+                    url: 'https://github.com/SaudElabdullah',
+                  ),
+                  Link(
+                    child: Text(
+                      'LinkedIn 👨‍💻',
+                      textAlign: TextAlign.left,
+                      style: GoogleFonts.playfairDisplay(
+                        textStyle: TextStyle(
+                          fontSize: SizeConfig.textMultiplier! * 1.3,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                    url: 'https://www.linkedin.com/in/saud-elabdullah-100496205/',
                   ),
                 ],
               ),
