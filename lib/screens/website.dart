@@ -13,6 +13,8 @@ class Website extends StatefulWidget {
 }
 
 class _WebsiteState extends State<Website> {
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,9 +77,8 @@ class _WebsiteState extends State<Website> {
           ),
           Positioned(
             top: SizeConfig.heightMultiplier! * 33,
-            left: SizeConfig.widthMultiplier! * 30,
             child: Container(
-              padding: EdgeInsets.all(SizeConfig.widthMultiplier! * 2),
+              padding: EdgeInsets.all(SizeConfig.widthMultiplier! * 2) ,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(
@@ -114,7 +115,7 @@ class _WebsiteState extends State<Website> {
           ),
           Positioned(
             top: SizeConfig.heightMultiplier! * 36,
-            right: SizeConfig.widthMultiplier! * 30,
+            right: SizeConfig.widthMultiplier! * 40,
             child: Container(
               padding: EdgeInsets.all(SizeConfig.widthMultiplier! * 2),
               decoration: BoxDecoration(
